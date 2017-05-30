@@ -1,0 +1,133 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+</br>
+</br>
+<h1> another h1 tag</h1>
+
+{% block content %}
+<style type="text/css">
+header {
+  margin-bottom: 20px;
+}
+.wrapper {
+  width: 650px;
+  margin: auto;
+  padding: 25px 0px;
+}
+h1, h4 {
+  font-family: Helvetica Neue, Arial, sans-serif;
+  font-weight: normal;
+  margin: 0; 
+}
+h1 { 
+  font-size: 24pt;
+}
+h4 {
+  font-size: 16pt;
+  color: #aaa; 
+}
+	html {
+  height: 100%;
+  background: #f3f3f3;
+  background: -moz-linear-gradient(top, #f3f3f3 0%, #ffffff 50%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f3f3f3), color-stop(50%,#ffffff));
+  background: -webkit-linear-gradient(top, #f3f3f3 0%,#ffffff 50%);
+  background: -o-linear-gradient(top, #f3f3f3 0%,#ffffff 50%);
+  background: -ms-linear-gradient(top, #f3f3f3 0%,#ffffff 50%);
+  background: linear-gradient(top, #f3f3f3 0%,#ffffff 50%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#f3f3f3', endColorstr='#ffffff',GradientType=0 );
+}
+figure {
+  float: left;
+}
+figure img {
+  max-width: 350px;
+}
+section {
+  font-family: Tahoma, Arial, sans-serif;
+  line-height: 150%;
+  float: right;
+  width: 300px;
+  color: #333;
+}
+summary {
+  cursor: pointer;
+  font-size: 12pt;
+  outline: 0; 
+}
+button {
+  background: #36a9ea;
+  background: -moz-linear-gradient(top, #36a9ea 0%, #127fd2 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#36a9ea), color-stop(100%,#127fd2));
+  background: -webkit-linear-gradient(top, #36a9ea 0%,#127fd2 100%);
+  background: -o-linear-gradient(top, #36a9ea 0%,#127fd2 100%);
+  background: -ms-linear-gradient(top, #36a9ea 0%,#127fd2 100%);
+  background: linear-gradient(top, #36a9ea 0%,#127fd2 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#36a9ea', endColorstr='#127fd2',GradientType=0 );
+  border: 1px solid #00599d;
+  color: #fff;
+  padding: 8px 20px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, .1), inset 0px 1px 0px 0px rgba(250, 250, 250, .3);
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, .1), inset 0px 1px 0px 0px rgba(250, 250, 250, .3);
+  text-shadow: 0px 1px 1px #156cc4;
+  filter: dropshadow(color=#156cc4, offx=0, offy=1);
+  font-size: 10pt; 
+}
+ 
+button:hover {
+  background: #2f90d5;
+  background: -moz-linear-gradient(top, #2f90d5 0%, #0351b7 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2f90d5), color-stop(100%,#0351b7));
+  background: -webkit-linear-gradient(top, #2f90d5 0%,#0351b7 100%);
+  background: -o-linear-gradient(top, #2f90d5 0%,#0351b7 100%);
+  background: -ms-linear-gradient(top, #2f90d5 0%,#0351b7 100%);
+  background: linear-gradient(top, #2f90d5 0%,#0351b7 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#2f90d5', endColorstr='#0351b7',GradientType=0 );
+}
+ 
+button:active {
+  background: #127fd2;
+  -webkit-box-shadow: inset 0px 2px 1px 0px rgba(0, 47, 117, .5), 0px 1px 1px 0px rgba(0, 0, 0, 0);
+  box-shadow: inset 0px 2px 1px 0px rgba(0, 47, 117, .5), 0px 1px 1px 0px rgba(0, 0, 0, 0); 
+}
+</style>
+
+
+<div class="product">
+ 
+  <header>
+    <hgroup>
+      <h1>Apple iPhone 4 - 16GB</h1>
+      <h4>The most amazing iPhone yet.</h4>
+    </hgroup>
+  </header>
+ 
+  <figure>
+    <img src= "{% static 'img/home.jpg' %}" />
+  </figure>
+ 
+  <section>
+ 
+  <p>The faster dual-core A5 chip. The 8MP camera with all-new optics also shoots 1080p HD video. And introducing Siri. It's the most amazing iPhone yet.</p>
+ 
+  <details>
+   <summary>Product Features</summary>
+      <ul>
+        <li>8 mega pixel camera with full 1080p video recording</li>
+        <li>Siri voice assitant</li>
+        <li>iCloud</li>
+        <li>Air Print</li>
+        <li>Retina display</li>
+        <li>Photo and video geotagging</li>
+      </ul>
+  </details>
+ 
+  <button>Buy Now</button>
+ 
+  </section>
+ 
+</div>
+{% endblock %}
